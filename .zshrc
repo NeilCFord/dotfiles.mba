@@ -52,3 +52,5 @@ bindkey '^N' history-search-forward
 eval "$(rbenv init -)"
 export RBENV_ROOT=/usr/local/opt/rbenv
 
+
+PATH=$PATH:$HOME/.rvm/bin # Add RVM to PATH for scripting
