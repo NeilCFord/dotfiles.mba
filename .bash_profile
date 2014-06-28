@@ -1,3 +1,14 @@
+
+# Setting PATH for MacPython 2.6
+# The orginal version is saved in .bash_profile.pysave
+PATH="/Library/Frameworks/Python.framework/Versions/2.6/bin:${PATH}"
+export PATH
+
+# Setting PATH for Python 3.3
+# The orginal version is saved in 1TB.pysave
+PATH="/Library/Frameworks/Python.framework/Versions/3.3/bin:${PATH}"
+export PATH
+
 [[ -s ~/.bashrc ]] && source ~/.bashrc
 
 [[ -s "$HOME/.rvm/scripts/rvm" ]] && source "$HOME/.rvm/scripts/rvm" # Load RVM into a shell session *as a function*
@@ -28,4 +39,5 @@ function rvm_version {
 #export PS1="\$(rvm_version)\W \$(parse_git_branch)\$ " # Without the colors
 
 # I had to put the \[ and \] down here, as opposed to $IRED, to avoid wrapping funkiness.
-export PS1="\[$IRED\]\$(rvm_version)\[$NO_COLOR\] \w\[$IGRN\]\$(parse_git_branch)\[$NO_COLOR\] \u \$ "
+# export PS1="\[$IRED\]\$(rvm_version)\[$NO_COLOR\] \w\[$IGRN\]\$(parse_git_branch)\[$NO_COLOR\] \u \$ "
+export PS1="\w\[$IGRN\]\$(parse_git_branch)\[$NO_COLOR\] \u \$ "
