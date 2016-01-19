@@ -1,5 +1,5 @@
 # Customize to your needs...
-PATH=/usr/local/bin:$PATH
+PATH=/usr/local/sbin:/usr/local/bin:$PATH
 
 # VIM support
 export EDITOR="vim"

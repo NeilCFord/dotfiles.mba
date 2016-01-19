@@ -21,4 +21,9 @@ function parse_git_branch {
 # Personalised version removing the ruby version.
 export PS1="\w\[$IGRN\]\$(parse_git_branch)\[$NO_COLOR\] \u \$ "
 # added by Anaconda3 2.4.0 installer
-export PATH="/Applications/anaconda/bin:$PATH"
+#export PATH="/Applications/anaconda/bin:$PATH"
+
+# Setting PATH for Python 3.5
+# The orginal version is saved in .bash_profile.pysave
+#PATH="/Library/Frameworks/Python.framework/Versions/3.5/bin:${PATH}"
+#export PATH
